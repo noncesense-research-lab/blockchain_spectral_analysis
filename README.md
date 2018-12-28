@@ -22,5 +22,13 @@ Use `n_tx_hashes` as the signal (y, to be transformed), and test two different t
 -  `height` field [caveat: this is not a uniform domain]
 -  `timestamp` field [caveat: these can be inaccurate by +/- 400 s]
 
+Neptune Research generated the full file using the [Monero Archival Project](https://github.com/mitchellpkt/monero_archival_project)'s custom transaction database, using the query:
+
+```
+SELECT id, is_alt_block, height, n_tx_hashes, timestamp, nrt
+FROM block
+ORDER BY id
+```
+
 ## Solicitation
 Looking for analogous data from transparent blockchains (Ethereum, Bitcoin, etc) so that temporal signals can be checked against ground truth from transaction tree topology.
