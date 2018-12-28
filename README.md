@@ -13,8 +13,8 @@ Transforming blockchain timestamps into frequency domain to highlight related tr
 Columns are: `id`, `is_alt_block`, `height`, `n_tx_hashes`, `timestamp`, `nrt`
 
 There are two Monero files
--  `XMR_data_from_20181220.csv` contains the entire history of Monero transactions (first row = headers)
--  `XMR_last_yearish.csv` contains the most recent 250,000 blocks (no headers), 
+-  `XMR_data_from_20181220.csv` contains the entire history of Monero transactions
+-  `XMR_last_yearish.csv` contains the most recent 250,000 blocks 
 
 The last-year file was extracted by `tail XMR_data_from_20181220.csv -n 250000 > XMR_last_yearish.csv`
 
